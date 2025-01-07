@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Styled Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: beige;">
+  <header class="header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Top Secret Store</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="css.html" class="nav-link">Poem</a></li>
+          <li class="nav-item"><a href="bootstrap.html" class="nav-link">Start</a></li>
+          <li class="nav-item"><a href="combined.html" class="nav-link">Items</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <h2 class="gradient-text">Available Items</h2><br>
+    
+    <div class="d-flex justify-content-around flex-wrap">
+      <div class="card zoom-effect">
+        <img src="assets/product1.jpg" alt="Patience" height="300" width="300" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Patience   -   50.000 €</h5>
+          <p class="card-text">A quiet force that waits, unseen,</p><br>
+          <p>shaping destiny through stillness and time.</p>
+        </div>
+      </div>
+      <div class="card zoom-effect">
+        <img src="assets/product2.jpg" alt="Vitality" height="300" width="300" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Vitality   -   50.000 €</h5>
+          <p class="card-text">The unseen spark that pulses<br>
+             through every breath,</p><br>
+          <p>a surge of energy that defies decay.</p>
+        </div>
+      </div>
+    </div><br>
+    <br> 
+
+    <section class="mt-5">
+        <h2>Purchase Form</h2>
+        <form action="https://www.jkorpela.fi/cgi-bin/echo.cgi" method="POST" class="p-4 border rounded bg-light">
+          <div class="mb-3">
+            <label for="name" class="form-label">First Name</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your first name" required>
+          </div>
+          <div class="mb-3">
+            <label for="surname" class="form-label">Last Name</label>
+            <input type="text" id="surname" name="surname" class="form-control" placeholder="Enter your last name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="credit-card" class="form-label">Credit Card Number</label>
+            <input type="text" id="credit-card" name="credit_card" class="form-control" placeholder="Enter your credit card number" maxlength="16" required>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Purchase</button>
+          </div>
+        </form><br>
+
+      <main class="container">
+        <h2 class="mb-4">Client Reviews</h2>
+      
+        <div class="row">
+            <section class="review-section">
+            <h3>"Patience" Reviews</h3>
+            <div class="review-card">
+                <img src="assets/client1.jpg" alt="Client 1" height="100" width="100" class="review-icon">
+                <div class="review-text">
+                <p class="review-author">Keanu Reeves</p>
+                <p class="review-message">This is even better than the red pill</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="assets/client2.jpg" alt="Client 2" height="100" width="100" class="review-icon">
+                <div class="review-text">
+                <p class="review-author">Chill Guy</p>
+                <p class="review-message">Since I bought this, I've been as chill as I could ever be</p>
+                </div>
+            </div>
+            </section>
+        </div>
+      
+        <div class="col-md-6"></div>
+            <section class="review-section">
+            <h3>"Vitality"Reviews</h3>
+            <div class="review-card">
+                <img src="assets/client3.jpg" alt="Client 3" height="100" width="100" class="review-icon">
+                <div class="review-text">
+                <p class="review-author">Daddy Yankee</p>
+                <p class="review-message">I noticed how my aging started to slow down. every cent was worth it! Now I can dance to gasolina for a few more years</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="assets/client4.jpg" alt="Client 4" height="100" width="100" class="review-icon">
+                <div class="review-text">
+                <p class="review-author">Will Smith</p>
+                <p class="review-message">This helped me a lot on my aging, but it didn't help on my marriage</p>
+                </div>
+            </div>
+            </section>
+        </div>
+  </main>
+
+  <footer class="footer bg-dark text-white py-3 text-center">
+    <p>© 2025 Secret Store | <a href="privacy.html" class="text-light">Privacy Policy</a> | <a href="terms.html" class="text-light">Terms of Use</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
